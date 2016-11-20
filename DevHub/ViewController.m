@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "SXSmartReadViewController.h"
 
 @interface ViewController ()
 
@@ -25,6 +26,16 @@
     [self.targetHeightConstraint setConstant:innerHeight];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    UIImage *logoImage = [UIImage imageNamed:@"logo"];
+    UIImageView *logoImageView = [[UIImageView alloc] initWithImage:logoImage];
+    logoImageView.frame = CGRectMake(75, 0, 150, 44);
+    [logoImageView setContentMode:UIViewContentModeScaleAspectFit];
+    [self.navigationItem setTitleView:logoImageView];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -33,6 +44,8 @@
 
 
 - (IBAction)imageCompareButtonPressed:(id)sender {
+    SXSmartReadViewController *smartReadViewController = [[SXSmartReadViewController alloc] init];
+    [self.navigationController pushViewController:smartReadViewController animated:YES];
 }
 
 - (IBAction)ocrButtonPressed:(id)sender {
