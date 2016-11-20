@@ -66,9 +66,10 @@
     
     [session startRunning];
     
-    // UI
-//    [self.playerViewWidthConstraint setConstant:self.view.frame.size.width * 0.75];
+    // player_view
     [self.playerViewHeightConstraint setConstant: OCR_WINDOW_HEIGHT];
+    [player_view.layer setBorderWidth:1.0];
+    [player_view.layer setBorderColor:[UIColor redColor].CGColor];
 }
 
 - (void)viewWillAppear:(BOOL)animated {

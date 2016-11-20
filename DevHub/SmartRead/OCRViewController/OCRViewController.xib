@@ -74,7 +74,7 @@
                         <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4aD-tt-6oK">
                             <rect key="frame" x="10" y="110" width="355" height="266"/>
                             <subviews>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="corner1" translatesAutoresizingMaskIntoConstraints="NO" id="QsK-8J-M5v">
+                                <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="corner1" translatesAutoresizingMaskIntoConstraints="NO" id="QsK-8J-M5v">
                                     <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     <constraints>
@@ -82,7 +82,7 @@
                                         <constraint firstAttribute="width" constant="40" id="YVl-RX-kUN"/>
                                     </constraints>
                                 </imageView>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="corner4" translatesAutoresizingMaskIntoConstraints="NO" id="KYR-uz-CPC">
+                                <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="corner4" translatesAutoresizingMaskIntoConstraints="NO" id="KYR-uz-CPC">
                                     <rect key="frame" x="0.0" y="226" width="40" height="40"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     <constraints>
@@ -90,7 +90,7 @@
                                         <constraint firstAttribute="width" constant="40" id="Pcg-BG-RjY"/>
                                     </constraints>
                                 </imageView>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="corner2" translatesAutoresizingMaskIntoConstraints="NO" id="WQb-9G-tVH">
+                                <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="corner2" translatesAutoresizingMaskIntoConstraints="NO" id="WQb-9G-tVH">
                                     <rect key="frame" x="315" y="0.0" width="40" height="40"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     <constraints>
@@ -98,7 +98,7 @@
                                         <constraint firstAttribute="width" constant="40" id="uTe-1K-44b"/>
                                     </constraints>
                                 </imageView>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="corner3" translatesAutoresizingMaskIntoConstraints="NO" id="bzV-xm-n9J">
+                                <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="corner3" translatesAutoresizingMaskIntoConstraints="NO" id="bzV-xm-n9J">
                                     <rect key="frame" x="315" y="226" width="40" height="40"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     <constraints>
