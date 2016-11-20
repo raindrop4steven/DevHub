@@ -29,6 +29,7 @@
 		B06EA3A11DE156CF00C132CE /* SXSmartReadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B06EA3931DE156CF00C132CE /* SXSmartReadViewController.m */; };
 		B06EA3A21DE156CF00C132CE /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B06EA3961DE156CF00C132CE /* HomeViewController.m */; };
 		B06EA3A31DE156CF00C132CE /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B06EA3971DE156CF00C132CE /* HomeViewController.xib */; };
+		B06EA3A81DE15F2D00C132CE /* DEVButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B06EA3A71DE15F2D00C132CE /* DEVButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,8 @@
 		B06EA3951DE156CF00C132CE /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		B06EA3961DE156CF00C132CE /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		B06EA3971DE156CF00C132CE /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		B06EA3A61DE15F2D00C132CE /* DEVButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEVButton.h; sourceTree = "<group>"; };
+		B06EA3A71DE15F2D00C132CE /* DEVButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEVButton.m; sourceTree = "<group>"; };
 		F2321958AC2878500C0DCD49 /* Pods-DevHub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevHub.release.xcconfig"; path = "Pods/Target Support Files/Pods-DevHub/Pods-DevHub.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -171,6 +174,7 @@
 				B067DF581DE1486C0059CB6A /* Assets.xcassets */,
 				B067DF5A1DE1486C0059CB6A /* LaunchScreen.storyboard */,
 				B067DF5D1DE1486C0059CB6A /* Info.plist */,
+				B06EA3A41DE15EDA00C132CE /* Views */,
 				B06EA37B1DE156CF00C132CE /* SmartRead */,
 				B067DF4C1DE1486C0059CB6A /* Supporting Files */,
 			);
@@ -278,6 +282,23 @@
 				B06EA3971DE156CF00C132CE /* HomeViewController.xib */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B06EA3A41DE15EDA00C132CE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B06EA3A51DE15EDA00C132CE /* Buttons */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B06EA3A51DE15EDA00C132CE /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				B06EA3A61DE15F2D00C132CE /* DEVButton.h */,
+				B06EA3A71DE15F2D00C132CE /* DEVButton.m */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -474,6 +495,7 @@
 				B06EA39A1DE156CF00C132CE /* LoadingView.m in Sources */,
 				B06EA3A11DE156CF00C132CE /* SXSmartReadViewController.m in Sources */,
 				B06EA3A01DE156CF00C132CE /* NSTimer+Addition.m in Sources */,
+				B06EA3A81DE15F2D00C132CE /* DEVButton.m in Sources */,
 				B067DF541DE1486C0059CB6A /* ViewController.m in Sources */,
 				B06EA3A21DE156CF00C132CE /* HomeViewController.m in Sources */,
 				B067DF511DE1486C0059CB6A /* AppDelegate.m in Sources */,

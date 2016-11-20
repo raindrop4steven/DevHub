@@ -7,19 +7,31 @@
 //
 
 #import <UIKit/UIKit.h>
+@class DEVButton;
 
 @interface ViewController : UIViewController
 
+// Button inner height constraints
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *imageHeightConstraint;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *ocrHeightConstraint;
-
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *sampleHeightConstraint;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *targetHeightConstraint;
 
-@property (weak, nonatomic) IBOutlet UIButton *imageCompareButton;
-@property (weak, nonatomic) IBOutlet UIButton *ocrButton;
-@property (weak, nonatomic) IBOutlet UIButton *sampleSearchButton;
-@property (weak, nonatomic) IBOutlet UIButton *targetTrckButton;
+// Button size constraints
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *imageCompareButtonSizeHeightConstarint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *imageCompareButtonSizeWidthConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *ocrButtonHeightConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *ocrButtonWidthConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *sampleSearchButtonHeightConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *sampleSearchButtonWidthConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *targetTrackButtonHeightConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *targetTrackButtonWidthConstraint;
+
+
+@property (weak, nonatomic) IBOutlet DEVButton *imageCompareButton;
+@property (weak, nonatomic) IBOutlet DEVButton *ocrButton;
+@property (weak, nonatomic) IBOutlet DEVButton *sampleSearchButton;
+@property (weak, nonatomic) IBOutlet DEVButton *targetTrckButton;
 
 - (IBAction)imageCompareButtonPressed:(id)sender;
 - (IBAction)ocrButtonPressed:(id)sender;

@@ -8,10 +8,14 @@
 
 #import "ViewController.h"
 #import "SXSmartReadViewController.h"
+#import "DEVButton.h"
 
 @interface ViewController ()
 
 @end
+
+#define BUTTON_WIDTH 240
+#define BUTTON_HEIGHT 50
 
 @implementation ViewController
 
@@ -19,11 +23,22 @@
     [super viewDidLoad];
     
     // Set interHeight between these buttons
-    CGFloat innerHeight = (self.view.frame.size.height - self.navigationController.navigationBar.frame.size.height) / 7;
+    CGFloat innerHeight = (self.view.frame.size.height - self.navigationController.navigationBar.frame.size.height - 4 * BUTTON_HEIGHT) / 7;
     [self.imageHeightConstraint setConstant:innerHeight];
     [self.ocrHeightConstraint setConstant:innerHeight];
     [self.sampleHeightConstraint setConstant:innerHeight];
     [self.targetHeightConstraint setConstant:innerHeight];
+    
+    // Set button size
+    [self.imageCompareButtonSizeWidthConstraint setConstant:BUTTON_WIDTH];
+    [self.imageCompareButtonSizeHeightConstarint setConstant:BUTTON_HEIGHT];
+    [self.ocrButtonWidthConstraint setConstant:BUTTON_WIDTH];
+    [self.ocrButtonHeightConstraint setConstant:BUTTON_HEIGHT];
+    [self.sampleSearchButtonWidthConstraint setConstant:BUTTON_WIDTH];
+    [self.sampleSearchButtonHeightConstraint setConstant:BUTTON_HEIGHT];
+    [self.targetTrackButtonWidthConstraint setConstant:BUTTON_WIDTH];
+    [self.targetTrackButtonHeightConstraint setConstant:BUTTON_HEIGHT];
+    
     
     // Set background
     UIGraphicsBeginImageContext(self.view.frame.size);
@@ -31,6 +46,7 @@
     UIImage *bannerImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     [self.view setBackgroundColor:[UIColor colorWithPatternImage:bannerImage]];
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated {
