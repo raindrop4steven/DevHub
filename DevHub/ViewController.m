@@ -68,22 +68,21 @@
 
 - (IBAction)imageCompareButtonPressed:(id)sender {
     HomeViewController *homeViewController = [[HomeViewController alloc] init];
-    
     [self.navigationController pushViewController:homeViewController animated:YES];
 }
 
 - (IBAction)ocrButtonPressed:(id)sender {
-//    SXSmartReadViewController *smartReadViewController = [[SXSmartReadViewController alloc] init];
-//    [self.navigationController pushViewController:smartReadViewController animated:YES];
+    HomeViewController *homeViewController = [[HomeViewController alloc] init];
+    [self.navigationController pushViewController:homeViewController animated:YES];
 }
 
 - (IBAction)sampleSearchButtonPrssed:(id)sender {
-//    SXSmartReadViewController *smartReadViewController = [[SXSmartReadViewController alloc] init];
-//    [self.navigationController pushViewController:smartReadViewController animated:YES];
+    HomeViewController *homeViewController = [[HomeViewController alloc] init];
+    [self.navigationController pushViewController:homeViewController animated:YES];
 }
 
 - (IBAction)targetTrackButtonPressed:(id)sender {
-//    SXSmartReadViewController *smartReadViewController = [[SXSmartReadViewController alloc] init];
-//    [self.navigationController pushViewController:smartReadViewController animated:YES];
+    HomeViewController *homeViewController = [[HomeViewController alloc] init];
+    [self.navigationController pushViewController:homeViewController animated:YES];
 }
 @end
