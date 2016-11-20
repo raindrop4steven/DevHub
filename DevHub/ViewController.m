@@ -24,6 +24,13 @@
     [self.ocrHeightConstraint setConstant:innerHeight];
     [self.sampleHeightConstraint setConstant:innerHeight];
     [self.targetHeightConstraint setConstant:innerHeight];
+    
+    // Set background
+    UIGraphicsBeginImageContext(self.view.frame.size);
+    [[UIImage imageNamed:@"banner.jpg"] drawInRect:self.view.bounds];
+    UIImage *bannerImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    [self.view setBackgroundColor:[UIColor colorWithPatternImage:bannerImage]];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -31,7 +38,7 @@
     
     UIImage *logoImage = [UIImage imageNamed:@"logo"];
     UIImageView *logoImageView = [[UIImageView alloc] initWithImage:logoImage];
-    logoImageView.frame = CGRectMake(75, 0, 150, 44);
+    logoImageView.frame = CGRectMake(75, 0, 50, 28);
     [logoImageView setContentMode:UIViewContentModeScaleAspectFit];
     [self.navigationItem setTitleView:logoImageView];
 }

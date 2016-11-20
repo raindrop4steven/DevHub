@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -30,7 +29,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dkV-SG-cpA" userLabel="Bottom Button View">
-                    <rect key="frame" x="0.0" y="502" width="375" height="117"/>
+                    <rect key="frame" x="0.0" y="550" width="375" height="117"/>
                     <subviews>
                         <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pfe-zx-HTA">
                             <rect key="frame" x="159" y="30" width="57" height="57"/>
@@ -53,26 +52,26 @@
                     </constraints>
                 </view>
                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hip-02-bi6" userLabel="Cover View">
-                    <rect key="frame" x="0.0" y="64" width="375" height="438"/>
+                    <rect key="frame" x="0.0" y="64" width="375" height="486"/>
                     <subviews>
                         <view clipsSubviews="YES" alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jEM-8N-0Yb">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="86"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="110"/>
                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         </view>
                         <view clipsSubviews="YES" alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GUe-qQ-dwf">
-                            <rect key="frame" x="0.0" y="86" width="10" height="266"/>
+                            <rect key="frame" x="0.0" y="110" width="10" height="266"/>
                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         </view>
                         <view clipsSubviews="YES" alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P7o-NJ-7m8">
-                            <rect key="frame" x="0.0" y="352" width="375" height="86"/>
+                            <rect key="frame" x="0.0" y="376" width="375" height="110"/>
                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         </view>
                         <view clipsSubviews="YES" alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jUx-9o-LrS">
-                            <rect key="frame" x="365" y="86" width="10" height="266"/>
+                            <rect key="frame" x="365" y="110" width="10" height="266"/>
                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         </view>
                         <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4aD-tt-6oK">
-                            <rect key="frame" x="10" y="86" width="355" height="266"/>
+                            <rect key="frame" x="10" y="110" width="355" height="266"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="corner1" translatesAutoresizingMaskIntoConstraints="NO" id="QsK-8J-M5v">
                                     <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
@@ -189,7 +188,7 @@
                 <constraint firstAttribute="trailing" secondItem="dkV-SG-cpA" secondAttribute="trailing" id="hq1-BT-Eu0"/>
                 <constraint firstItem="dkV-SG-cpA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="mNg-wc-GSv"/>
                 <constraint firstItem="Hip-02-bi6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="qdJ-CC-uOe"/>
-                <constraint firstAttribute="bottom" secondItem="dkV-SG-cpA" secondAttribute="bottom" constant="48" id="sjf-ai-BeR"/>
+                <constraint firstAttribute="bottom" secondItem="dkV-SG-cpA" secondAttribute="bottom" id="sjf-ai-BeR"/>
             </constraints>
             <nil key="simulatedTopBarMetrics"/>
             <point key="canvasLocation" x="-622" y="-59"/>
