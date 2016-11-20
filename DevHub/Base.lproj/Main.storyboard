@@ -64,11 +64,19 @@
                                     <action selector="imageCompareButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dCi-Og-qeD"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e9U-5l-jDe">
+                                <rect key="frame" x="166" y="626" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="UbM-Ws-Npj" firstAttribute="top" secondItem="Cbu-hK-cyO" secondAttribute="bottom" constant="82" id="5ro-Rf-h1M"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="e9U-5l-jDe" secondAttribute="bottom" constant="20" id="9bB-v5-vuB"/>
                             <constraint firstItem="Cbu-hK-cyO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BJA-CX-zuy"/>
+                            <constraint firstItem="e9U-5l-jDe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VS4-pS-9Ae"/>
                             <constraint firstItem="Cbu-hK-cyO" firstAttribute="top" secondItem="tWs-WC-awU" secondAttribute="bottom" constant="82" id="aBZ-by-lGJ"/>
                             <constraint firstItem="x1l-1k-4NJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="cbQ-3B-Pcb"/>
                             <constraint firstItem="tWs-WC-awU" firstAttribute="top" secondItem="x1l-1k-4NJ" secondAttribute="bottom" constant="76" id="itA-Oj-ZyE"/>
@@ -81,6 +89,7 @@
                         <nil key="title"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="authorLabel" destination="e9U-5l-jDe" id="ijb-ba-9bv"/>
                         <outlet property="imageCompareButton" destination="x1l-1k-4NJ" id="aVl-m2-PMj"/>
                         <outlet property="imageCompareButtonSizeHeightConstarint" destination="EaK-sd-aaY" id="HUU-Tr-xr9"/>
                         <outlet property="imageCompareButtonSizeWidthConstraint" destination="okl-bI-duj" id="KLW-et-Cub"/>

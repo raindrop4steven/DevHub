@@ -39,6 +39,11 @@
     [self.targetTrackButtonWidthConstraint setConstant:BUTTON_WIDTH];
     [self.targetTrackButtonHeightConstraint setConstant:BUTTON_HEIGHT];
     
+    // Set copyright label
+    [self.authorLabel setText:@"@智创云图"];
+    [self.authorLabel setTextColor:[UIColor whiteColor]];
+    [self.authorLabel setFont:[UIFont systemFontOfSize:15]];
+    
     
     // Set background
     UIGraphicsBeginImageContext(self.view.frame.size);

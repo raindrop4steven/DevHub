@@ -32,6 +32,7 @@
 @property (weak, nonatomic) IBOutlet DEVButton *ocrButton;
 @property (weak, nonatomic) IBOutlet DEVButton *sampleSearchButton;
 @property (weak, nonatomic) IBOutlet DEVButton *targetTrckButton;
+@property (weak, nonatomic) IBOutlet UILabel *authorLabel;
 
 - (IBAction)imageCompareButtonPressed:(id)sender;
 - (IBAction)ocrButtonPressed:(id)sender;
