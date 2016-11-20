@@ -49,8 +49,8 @@
     IBOutlet UIButton *take_photo_button;
 }
 
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *playerViewWidthConstraint;
+//@property (weak, nonatomic) IBOutlet NSLayoutConstraint *playerViewWidthConstraint;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *playerViewHeightConstraint;
-
+@property (nonatomic, strong)NSString *type;
 
 @end

@@ -32,6 +32,8 @@
 		B0D2BE221DE1879300CD8F24 /* OCRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D2BE201DE1879300CD8F24 /* OCRViewController.m */; };
 		B0D2BE231DE1879300CD8F24 /* OCRViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0D2BE211DE1879300CD8F24 /* OCRViewController.xib */; };
 		B0D2BE271DE18BDB00CD8F24 /* SXWXNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D2BE261DE18BDB00CD8F24 /* SXWXNewsViewController.m */; };
+		B0D2BE2B1DE1900900CD8F24 /* OCRTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D2BE291DE1900900CD8F24 /* OCRTextViewController.m */; };
+		B0D2BE2C1DE1900900CD8F24 /* OCRTextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0D2BE2A1DE1900900CD8F24 /* OCRTextViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +102,9 @@
 		B0D2BE211DE1879300CD8F24 /* OCRViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OCRViewController.xib; sourceTree = "<group>"; };
 		B0D2BE251DE18BDB00CD8F24 /* SXWXNewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXWXNewsViewController.h; sourceTree = "<group>"; };
 		B0D2BE261DE18BDB00CD8F24 /* SXWXNewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXWXNewsViewController.m; sourceTree = "<group>"; };
+		B0D2BE281DE1900900CD8F24 /* OCRTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCRTextViewController.h; sourceTree = "<group>"; };
+		B0D2BE291DE1900900CD8F24 /* OCRTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCRTextViewController.m; sourceTree = "<group>"; };
+		B0D2BE2A1DE1900900CD8F24 /* OCRTextViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OCRTextViewController.xib; sourceTree = "<group>"; };
 		F2321958AC2878500C0DCD49 /* Pods-DevHub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevHub.release.xcconfig"; path = "Pods/Target Support Files/Pods-DevHub/Pods-DevHub.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -325,6 +330,9 @@
 				B0D2BE1F1DE1879300CD8F24 /* OCRViewController.h */,
 				B0D2BE201DE1879300CD8F24 /* OCRViewController.m */,
 				B0D2BE211DE1879300CD8F24 /* OCRViewController.xib */,
+				B0D2BE281DE1900900CD8F24 /* OCRTextViewController.h */,
+				B0D2BE291DE1900900CD8F24 /* OCRTextViewController.m */,
+				B0D2BE2A1DE1900900CD8F24 /* OCRTextViewController.xib */,
 			);
 			path = OCRViewController;
 			sourceTree = "<group>";
@@ -451,6 +459,7 @@
 				B067DF5C1DE1486C0059CB6A /* LaunchScreen.storyboard in Resources */,
 				B0D2BE231DE1879300CD8F24 /* OCRViewController.xib in Resources */,
 				B07C06101DE1844800D2E974 /* Demo.mp4 in Resources */,
+				B0D2BE2C1DE1900900CD8F24 /* OCRTextViewController.xib in Resources */,
 				B067DF591DE1486C0059CB6A /* Assets.xcassets in Resources */,
 				B06EA3A31DE156CF00C132CE /* HomeViewController.xib in Resources */,
 				B067DF571DE1486C0059CB6A /* Main.storyboard in Resources */,
@@ -536,6 +545,7 @@
 				B06EA3A01DE156CF00C132CE /* NSTimer+Addition.m in Sources */,
 				B06EA3A81DE15F2D00C132CE /* DEVButton.m in Sources */,
 				B067DF541DE1486C0059CB6A /* ViewController.m in Sources */,
+				B0D2BE2B1DE1900900CD8F24 /* OCRTextViewController.m in Sources */,
 				B06EA3A21DE156CF00C132CE /* HomeViewController.m in Sources */,
 				B067DF511DE1486C0059CB6A /* AppDelegate.m in Sources */,
 				B06EA3991DE156CF00C132CE /* HttpRequest.m in Sources */,

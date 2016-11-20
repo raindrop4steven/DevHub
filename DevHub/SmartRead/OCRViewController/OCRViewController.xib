@@ -19,7 +19,6 @@
                 <outlet property="corner4" destination="bzV-xm-n9J" id="ppd-Ym-9aF"/>
                 <outlet property="cover_view" destination="Hip-02-bi6" id="LpX-f9-2XW"/>
                 <outlet property="playerViewHeightConstraint" destination="naN-8d-AuT" id="rly-XQ-MVp"/>
-                <outlet property="playerViewWidthConstraint" destination="qHF-VQ-YQv" id="ib1-VN-Enx"/>
                 <outlet property="player_view" destination="4aD-tt-6oK" id="WW5-fe-s6n"/>
                 <outlet property="take_photo_button" destination="Pfe-zx-HTA" id="Zt4-cG-hJK"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -116,7 +115,6 @@
                                 <constraint firstAttribute="trailing" secondItem="WQb-9G-tVH" secondAttribute="trailing" id="mdn-ZP-9uG"/>
                                 <constraint firstItem="KYR-uz-CPC" firstAttribute="leading" secondItem="4aD-tt-6oK" secondAttribute="leading" id="n4H-Pl-wF9"/>
                                 <constraint firstAttribute="height" constant="266" id="naN-8d-AuT"/>
-                                <constraint firstAttribute="width" constant="355" id="qHF-VQ-YQv"/>
                                 <constraint firstAttribute="bottom" secondItem="bzV-xm-n9J" secondAttribute="bottom" id="veY-35-1ec"/>
                                 <constraint firstItem="QsK-8J-M5v" firstAttribute="leading" secondItem="4aD-tt-6oK" secondAttribute="leading" id="wWk-0O-krV"/>
                                 <constraint firstItem="QsK-8J-M5v" firstAttribute="top" secondItem="4aD-tt-6oK" secondAttribute="top" id="xF1-C2-fcA"/>

@@ -49,4 +49,6 @@
     IBOutlet UIButton *take_photo_button;
 }
 
+@property (nonatomic, strong)NSString *type;
+
 @end

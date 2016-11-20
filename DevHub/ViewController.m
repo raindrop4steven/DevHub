@@ -75,18 +75,21 @@
 
 - (IBAction)imageCompareButtonPressed:(id)sender {
     HomeViewController *homeViewController = [[HomeViewController alloc] init];
+    homeViewController.type = @"compare";
     [self.navigationItem setBackBarButtonItem:[[UIBarButtonItem alloc] initWithTitle:@"开发集市" style:UIBarButtonItemStylePlain target:nil action:nil]];
     [self.navigationController pushViewController:homeViewController animated:YES];
 }
 
 - (IBAction)ocrButtonPressed:(id)sender {
     OCRViewController *homeViewController = [[OCRViewController alloc] init];
+    homeViewController.type = @"ocr";
     [self.navigationItem setBackBarButtonItem:[[UIBarButtonItem alloc] initWithTitle:@"开发集市" style:UIBarButtonItemStylePlain target:nil action:nil]];
     [self.navigationController pushViewController:homeViewController animated:YES];
 }
 
 - (IBAction)sampleSearchButtonPrssed:(id)sender {
     HomeViewController *homeViewController = [[HomeViewController alloc] init];
+    homeViewController.type = @"pattern";
     [self.navigationItem setBackBarButtonItem:[[UIBarButtonItem alloc] initWithTitle:@"开发集市" style:UIBarButtonItemStylePlain target:nil action:nil]];
     [self.navigationController pushViewController:homeViewController animated:YES];
 }

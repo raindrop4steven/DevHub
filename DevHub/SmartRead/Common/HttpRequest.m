@@ -42,11 +42,11 @@
     return self;
 }
 
--(void)postImage:(UIImage *)image success:(void (^)(NSDictionary *result))success failed:(void(^)(NSString *error))failed
+-(void)postImage:(UIImage *)image type:(NSString *)type success:(void (^)(NSDictionary *))success failed:(void (^)(NSString *))failed
 {
     [Common showLoadingView:@"图片解析中..."];
-    
-	[_session POST:SERVERIP parameters:nil constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+    NSDictionary *parameters = @{@"type": type};
+	[_session POST:SERVERIP parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
         NSData *data = UIImageJPEGRepresentation(image, 0.5);
         [formData appendPartWithFileData:data name:@"image" fileName:@"image.jpg" mimeType:@"image/jpeg"];
 	} success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {

@@ -7,6 +7,7 @@
 //
 
 #import "OCRViewController.h"
+#import "OCRTextViewController.h"
 #import "UIImageView+WebCache.h"
 
 @interface OCRViewController ()
@@ -14,7 +15,9 @@
 @property (nonatomic, strong)UIBarButtonItem *closeBrButtonItem;
 @end
 
+#define OCR_WINDOW_HEIGHT 44
 @implementation OCRViewController
+@synthesize type;
 
 - (void)viewDidLoad
 {
@@ -64,8 +67,8 @@
     [session startRunning];
     
     // UI
-    [self.playerViewWidthConstraint setConstant:self.view.frame.size.width * 0.75];
-    [self.playerViewHeightConstraint setConstant:44];
+//    [self.playerViewWidthConstraint setConstant:self.view.frame.size.width * 0.75];
+    [self.playerViewHeightConstraint setConstant: OCR_WINDOW_HEIGHT];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -133,35 +136,25 @@
 //裁剪图片
 - (UIImage *)cutImage:(UIImage*)image
 {
-    float x = (image.size.height - (image.size.width - 20) * 3.0 / 4.0) / 2.0;
+    float x = (image.size.height - OCR_WINDOW_HEIGHT) / 2.0;
     
-    CGImageRef imageRef = CGImageCreateWithImageInRect([image CGImage], CGRectMake(x, 10, (image.size.width - 20) * 3.0 / 4.0, image.size.width - 20));
+    CGImageRef imageRef = CGImageCreateWithImageInRect([image CGImage], CGRectMake(x, 10, OCR_WINDOW_HEIGHT, image.size.width - 20));
     
     return [UIImage imageWithCGImage:imageRef scale:1.0 orientation:UIImageOrientationRight];
 }
 
 -(void)uploadImageFile:(UIImage *)image
 {
-    [[HttpRequest instance] postImage:image success:^(NSDictionary *result) {
+    [[HttpRequest instance] postImage:image type:self.type success:^(NSDictionary *result) {
         if ([[[result objectForKey:@"success"] stringValue] isEqualToString:@"1"]) {
             // Success
             NSDictionary *data = (NSDictionary *)[result objectForKey:@"data"];
-            NSString *type = (NSString *)[data objectForKey:@"type"];
+            NSString *returnType = (NSString *)[data objectForKey:@"type"];
             
-            if ([type isEqualToString:@"video"]) {
+            if ([returnType isEqualToString:@"text"]) {
                 // Play video
-                NSString *videoURL = (NSString *)[data objectForKey:@"res"];
-                [self startPlayVideo:videoURL];
-            } else if ([type isEqualToString:@"pics"]) {
-                // Play pictures
-                NSArray *pictures = (NSArray *)[data objectForKey:@"res"];
-                [self startPlayPhoto:pictures];
-            } else if([type isEqualToString:@"news"]){
-                NSDictionary *dict = (NSDictionary *)[data objectForKey:@"res"];
-                NSString *newsURL = (NSString *)[dict objectForKey:@"url"];
-                
-                // TODO
-                //[self presentViewController:nav animated:YES completion:nil];
+                NSString *textContent = (NSString *)[data objectForKey:@"res"];
+                [self startShowText:textContent];
             }
             else {
                 NSLog(@"Server error");
@@ -171,6 +164,12 @@
         [self stopPlayingMenu];
         [[[UIAlertView alloc] initWithTitle:@"提示" message:error delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil] show];
     }];
+}
+
+- (void)startShowText:(NSString *)textContent {
+    OCRTextViewController *ocrTextViewController = [[OCRTextViewController alloc] init];
+    ocrTextViewController.textContent = textContent;
+    [self.navigationController pushViewController:ocrTextViewController animated:YES];
 }
 
 -(void)startPlayVideo:(NSString *)videoName

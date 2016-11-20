@@ -16,6 +16,7 @@
 @end
 
 @implementation HomeViewController
+@synthesize type;
 
 - (void)viewDidLoad
 {
@@ -139,28 +140,26 @@
 
 -(void)uploadImageFile:(UIImage *)image
 {
-    [[HttpRequest instance] postImage:image success:^(NSDictionary *result) {
+    [[HttpRequest instance] postImage:image type:self.type success:^(NSDictionary *result) {
         if ([[[result objectForKey:@"success"] stringValue] isEqualToString:@"1"]) {
             // Success
             NSDictionary *data = (NSDictionary *)[result objectForKey:@"data"];
-            NSString *type = (NSString *)[data objectForKey:@"type"];
+            NSString *returnType = (NSString *)[data objectForKey:@"type"];
             
-            if ([type isEqualToString:@"video"]) {
+            if ([returnType isEqualToString:@"video"]) {
                 // Play video
                 NSString *videoURL = (NSString *)[data objectForKey:@"res"];
                 [self startPlayVideo:videoURL];
-            } else if ([type isEqualToString:@"pics"]) {
+            } else if ([returnType isEqualToString:@"pics"]) {
                 // Play pictures
                 NSArray *pictures = (NSArray *)[data objectForKey:@"res"];
                 [self startPlayPhoto:pictures];
-            } else if([type isEqualToString:@"news"]){
-                NSDictionary *dict = (NSDictionary *)[data objectForKey:@"res"];
-                NSString *newsURL = (NSString *)[dict objectForKey:@"url"];
+            } else if([returnType isEqualToString:@"url"]){
+                NSString *newsURL = (NSString *)[data objectForKey:@"res"];
                 SXWXNewsViewController *newsViewController = [[SXWXNewsViewController alloc] init];
                 newsViewController.url = newsURL;
-                UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:newsViewController];
                 
-                [self presentViewController:nav animated:YES completion:nil];
+                [self.navigationController pushViewController:newsViewController animated:YES];
             }
             else {
                 NSLog(@"Server error");

@@ -22,6 +22,6 @@
 +(id)instance;
 
 #pragma mark - 以URL形式请求字典型返回值
--(void)postImage:(UIImage *)image success:(void (^)(NSDictionary *result))success failed:(void(^)(NSString *error))failed;
+-(void)postImage:(UIImage *)image type:(NSString *)type success:(void (^)(NSDictionary *result))success failed:(void(^)(NSString *error))failed;
 
 @end
