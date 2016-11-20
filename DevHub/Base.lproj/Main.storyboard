@@ -61,7 +61,9 @@
                             <constraint firstItem="x1l-1k-4NJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xHr-QU-3tY"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="NkF-fp-Mhk"/>
+                    <navigationItem key="navigationItem" id="NkF-fp-Mhk">
+                        <nil key="title"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="imageCompareButton" destination="x1l-1k-4NJ" id="aVl-m2-PMj"/>
                         <outlet property="imageHeightConstraint" destination="cbQ-3B-Pcb" id="D91-Nq-zg3"/>
@@ -75,7 +77,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1573.5999999999999" y="106.59670164917542"/>
+            <point key="canvasLocation" x="1612" y="112.89355322338831"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zci-OI-vtS">
