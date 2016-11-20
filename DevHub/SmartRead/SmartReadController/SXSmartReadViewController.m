@@ -19,12 +19,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     
     self.homeViewController = [[HomeViewController alloc] init];
     [self.homeViewController.view setFrame:self.view.frame];
     [self addChildViewController:self.homeViewController];
     [self.view addSubview:self.homeViewController.view];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+}
+
+#pragma mark - Close playing menu
+- (void)closeMenu {
+
 }
 
 - (void)didReceiveMemoryWarning {

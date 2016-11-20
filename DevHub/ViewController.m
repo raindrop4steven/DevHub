@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "SXSmartReadViewController.h"
+#import "HomeViewController.h"
 #import "DEVButton.h"
 
 @interface ViewController ()
@@ -67,16 +67,23 @@
 
 
 - (IBAction)imageCompareButtonPressed:(id)sender {
-    SXSmartReadViewController *smartReadViewController = [[SXSmartReadViewController alloc] init];
-    [self.navigationController pushViewController:smartReadViewController animated:YES];
+    HomeViewController *homeViewController = [[HomeViewController alloc] init];
+    
+    [self.navigationController pushViewController:homeViewController animated:YES];
 }
 
 - (IBAction)ocrButtonPressed:(id)sender {
+//    SXSmartReadViewController *smartReadViewController = [[SXSmartReadViewController alloc] init];
+//    [self.navigationController pushViewController:smartReadViewController animated:YES];
 }
 
 - (IBAction)sampleSearchButtonPrssed:(id)sender {
+//    SXSmartReadViewController *smartReadViewController = [[SXSmartReadViewController alloc] init];
+//    [self.navigationController pushViewController:smartReadViewController animated:YES];
 }
 
 - (IBAction)targetTrackButtonPressed:(id)sender {
+//    SXSmartReadViewController *smartReadViewController = [[SXSmartReadViewController alloc] init];
+//    [self.navigationController pushViewController:smartReadViewController animated:YES];
 }
 @end

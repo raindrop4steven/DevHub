@@ -11,6 +11,7 @@
 
 @interface HomeViewController ()
 
+@property (nonatomic, strong)UIBarButtonItem *closeBrButtonItem;
 @end
 
 @implementation HomeViewController
@@ -61,6 +62,12 @@
     }
     
     [session startRunning];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    self.closeBrButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"关闭" style:UIBarButtonItemStylePlain target:self action:@selector(stopPlayingMenu)];
 }
 
 -(void)viewDidLayoutSubviews
@@ -251,6 +258,9 @@
     [player_view setBackgroundColor:[UIColor blackColor]];
     // Also black coverview
     [cover_view setBackgroundColor:[UIColor blackColor]];
+    
+    // Show right navigationItemButton
+    [self.navigationItem setRightBarButtonItem:self.closeBrButtonItem animated:YES];
 }
 
 -(void)stopPlayingMenu
@@ -262,6 +272,9 @@
     [corner2 setHidden:NO];
     [corner3 setHidden:NO];
     [corner4 setHidden:NO];
+    
+    // Hide right navigationItem
+    [self.navigationItem setRightBarButtonItem:nil animated:YES];
     
     [player_view setBackgroundColor:[UIColor clearColor]];
     // Also clear coverview's background color
