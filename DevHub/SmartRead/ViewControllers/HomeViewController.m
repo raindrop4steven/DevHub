@@ -7,6 +7,7 @@
 //
 
 #import "HomeViewController.h"
+#import "SXWXNewsViewController.h"
 #import "UIImageView+WebCache.h"
 
 @interface HomeViewController ()
@@ -155,9 +156,11 @@
             } else if([type isEqualToString:@"news"]){
                 NSDictionary *dict = (NSDictionary *)[data objectForKey:@"res"];
                 NSString *newsURL = (NSString *)[dict objectForKey:@"url"];
+                SXWXNewsViewController *newsViewController = [[SXWXNewsViewController alloc] init];
+                newsViewController.url = newsURL;
+                UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:newsViewController];
                 
-                // TODO
-                //[self presentViewController:nav animated:YES completion:nil];
+                [self presentViewController:nav animated:YES completion:nil];
             }
             else {
                 NSLog(@"Server error");
