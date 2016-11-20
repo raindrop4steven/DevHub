@@ -27,8 +27,8 @@
 		B06EA3A21DE156CF00C132CE /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B06EA3961DE156CF00C132CE /* HomeViewController.m */; };
 		B06EA3A31DE156CF00C132CE /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B06EA3971DE156CF00C132CE /* HomeViewController.xib */; };
 		B06EA3A81DE15F2D00C132CE /* DEVButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B06EA3A71DE15F2D00C132CE /* DEVButton.m */; };
-		B07C060C1DE1808400D2E974 /* DEVORCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B07C060B1DE1808400D2E974 /* DEVORCViewController.m */; };
 		B07C06101DE1844800D2E974 /* Demo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B07C060F1DE1844800D2E974 /* Demo.mp4 */; };
+		B0D2BE1D1DE185DF00CD8F24 /* DEVTargetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D2BE1C1DE185DF00CD8F24 /* DEVTargetViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,9 +89,9 @@
 		B06EA3971DE156CF00C132CE /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		B06EA3A61DE15F2D00C132CE /* DEVButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEVButton.h; sourceTree = "<group>"; };
 		B06EA3A71DE15F2D00C132CE /* DEVButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEVButton.m; sourceTree = "<group>"; };
-		B07C060A1DE1808400D2E974 /* DEVORCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEVORCViewController.h; sourceTree = "<group>"; };
-		B07C060B1DE1808400D2E974 /* DEVORCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEVORCViewController.m; sourceTree = "<group>"; };
 		B07C060F1DE1844800D2E974 /* Demo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Demo.mp4; sourceTree = "<group>"; };
+		B0D2BE1B1DE185DF00CD8F24 /* DEVTargetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEVTargetViewController.h; sourceTree = "<group>"; };
+		B0D2BE1C1DE185DF00CD8F24 /* DEVTargetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEVTargetViewController.m; sourceTree = "<group>"; };
 		F2321958AC2878500C0DCD49 /* Pods-DevHub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevHub.release.xcconfig"; path = "Pods/Target Support Files/Pods-DevHub/Pods-DevHub.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -174,8 +174,8 @@
 				B067DF5A1DE1486C0059CB6A /* LaunchScreen.storyboard */,
 				B067DF5D1DE1486C0059CB6A /* Info.plist */,
 				B07C06061DE17EDA00D2E974 /* Media */,
+				B0D2BE1A1DE185DF00CD8F24 /* Target */,
 				B06EA3A41DE15EDA00C132CE /* Views */,
-				B07C06091DE1806A00D2E974 /* OCR */,
 				B06EA37B1DE156CF00C132CE /* SmartRead */,
 				B067DF4C1DE1486C0059CB6A /* Supporting Files */,
 			);
@@ -299,13 +299,14 @@
 			path = Media;
 			sourceTree = "<group>";
 		};
-		B07C06091DE1806A00D2E974 /* OCR */ = {
+		B0D2BE1A1DE185DF00CD8F24 /* Target */ = {
 			isa = PBXGroup;
 			children = (
-				B07C060A1DE1808400D2E974 /* DEVORCViewController.h */,
-				B07C060B1DE1808400D2E974 /* DEVORCViewController.m */,
+				B0D2BE1B1DE185DF00CD8F24 /* DEVTargetViewController.h */,
+				B0D2BE1C1DE185DF00CD8F24 /* DEVTargetViewController.m */,
 			);
-			path = OCR;
+			name = Target;
+			path = Views/Target;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -496,11 +497,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B06EA3981DE156CF00C132CE /* Common.m in Sources */,
+				B0D2BE1D1DE185DF00CD8F24 /* DEVTargetViewController.m in Sources */,
 				B06EA39E1DE156CF00C132CE /* CycleScrollView.m in Sources */,
 				B06EA39A1DE156CF00C132CE /* LoadingView.m in Sources */,
 				B06EA3A11DE156CF00C132CE /* SXSmartReadViewController.m in Sources */,
 				B06EA3A01DE156CF00C132CE /* NSTimer+Addition.m in Sources */,
-				B07C060C1DE1808400D2E974 /* DEVORCViewController.m in Sources */,
 				B06EA3A81DE15F2D00C132CE /* DEVButton.m in Sources */,
 				B067DF541DE1486C0059CB6A /* ViewController.m in Sources */,
 				B06EA3A21DE156CF00C132CE /* HomeViewController.m in Sources */,

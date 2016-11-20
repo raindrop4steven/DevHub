@@ -6,9 +6,9 @@
 //  Copyright © 2016年 steven. All rights reserved.
 //
 
-#import "DEVORCViewController.h"
+#import "DEVTargetViewController.h"
 
-@interface DEVORCViewController ()
+@interface DEVTargetViewController ()
 
 //视频播放
 @property (nonatomic, strong)AVPlayer *video_player;
@@ -17,7 +17,7 @@
 
 @end
 
-@implementation DEVORCViewController
+@implementation DEVTargetViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

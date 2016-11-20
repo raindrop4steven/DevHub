@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "HomeViewController.h"
-#import "DEVORCViewController.h"
+#import "DEVTargetViewController.h"
 #import "DEVButton.h"
 
 @interface ViewController ()
@@ -91,7 +91,7 @@
 }
 
 - (IBAction)targetTrackButtonPressed:(id)sender {
-    DEVORCViewController *homeViewController = [[DEVORCViewController alloc] init];
+    DEVTargetViewController *homeViewController = [[DEVTargetViewController alloc] init];
     [self.navigationItem setBackBarButtonItem:[[UIBarButtonItem alloc] initWithTitle:@"开发集市" style:UIBarButtonItemStylePlain target:nil action:nil]];
     [self.navigationController pushViewController:homeViewController animated:YES];
 }
