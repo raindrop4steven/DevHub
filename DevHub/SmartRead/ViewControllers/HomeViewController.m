@@ -72,7 +72,7 @@
 
 -(void)viewDidLayoutSubviews
 {
-    [previewLayer setFrame:CGRectMake(0, 64, ScreenWidth, ScreenHeight - 64 - bottom_button_view.frame.size.height - 48)];
+    [previewLayer setFrame:CGRectMake(0, 64, ScreenWidth, ScreenHeight - 64 - bottom_button_view.frame.size.height)];
     [self.view bringSubviewToFront:cover_view];
 }
 
