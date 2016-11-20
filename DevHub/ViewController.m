@@ -16,7 +16,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    // Set interHeight between these buttons
+    CGFloat innerHeight = (self.view.frame.size.height - self.navigationController.navigationBar.frame.size.height) / 7;
+    [self.imageHeightConstraint setConstant:innerHeight];
+    [self.ocrHeightConstraint setConstant:innerHeight];
+    [self.sampleHeightConstraint setConstant:innerHeight];
+    [self.targetHeightConstraint setConstant:innerHeight];
 }
 
 
@@ -26,4 +32,15 @@
 }
 
 
+- (IBAction)imageCompareButtonPressed:(id)sender {
+}
+
+- (IBAction)ocrButtonPressed:(id)sender {
+}
+
+- (IBAction)sampleSearchButtonPrssed:(id)sender {
+}
+
+- (IBAction)targetTrackButtonPressed:(id)sender {
+}
 @end
