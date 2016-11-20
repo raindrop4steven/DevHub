@@ -27,6 +27,7 @@
 		B06EA3A21DE156CF00C132CE /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B06EA3961DE156CF00C132CE /* HomeViewController.m */; };
 		B06EA3A31DE156CF00C132CE /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B06EA3971DE156CF00C132CE /* HomeViewController.xib */; };
 		B06EA3A81DE15F2D00C132CE /* DEVButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B06EA3A71DE15F2D00C132CE /* DEVButton.m */; };
+		B07C06081DE17EE700D2E974 /* Demo.avi in Resources */ = {isa = PBXBuildFile; fileRef = B07C06071DE17EE700D2E974 /* Demo.avi */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		B06EA3971DE156CF00C132CE /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		B06EA3A61DE15F2D00C132CE /* DEVButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEVButton.h; sourceTree = "<group>"; };
 		B06EA3A71DE15F2D00C132CE /* DEVButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEVButton.m; sourceTree = "<group>"; };
+		B07C06071DE17EE700D2E974 /* Demo.avi */ = {isa = PBXFileReference; lastKnownFileType = video.avi; path = Demo.avi; sourceTree = "<group>"; };
 		F2321958AC2878500C0DCD49 /* Pods-DevHub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevHub.release.xcconfig"; path = "Pods/Target Support Files/Pods-DevHub/Pods-DevHub.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -168,6 +170,7 @@
 				B067DF581DE1486C0059CB6A /* Assets.xcassets */,
 				B067DF5A1DE1486C0059CB6A /* LaunchScreen.storyboard */,
 				B067DF5D1DE1486C0059CB6A /* Info.plist */,
+				B07C06061DE17EDA00D2E974 /* Media */,
 				B06EA3A41DE15EDA00C132CE /* Views */,
 				B06EA37B1DE156CF00C132CE /* SmartRead */,
 				B067DF4C1DE1486C0059CB6A /* Supporting Files */,
@@ -284,6 +287,14 @@
 			path = Buttons;
 			sourceTree = "<group>";
 		};
+		B07C06061DE17EDA00D2E974 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				B07C06071DE17EE700D2E974 /* Demo.avi */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -397,6 +408,7 @@
 				B067DF5C1DE1486C0059CB6A /* LaunchScreen.storyboard in Resources */,
 				B067DF591DE1486C0059CB6A /* Assets.xcassets in Resources */,
 				B06EA3A31DE156CF00C132CE /* HomeViewController.xib in Resources */,
+				B07C06081DE17EE700D2E974 /* Demo.avi in Resources */,
 				B067DF571DE1486C0059CB6A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
