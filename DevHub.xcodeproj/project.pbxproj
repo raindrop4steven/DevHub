@@ -20,9 +20,6 @@
 		B06EA3981DE156CF00C132CE /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = B06EA37E1DE156CF00C132CE /* Common.m */; };
 		B06EA3991DE156CF00C132CE /* HttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B06EA3811DE156CF00C132CE /* HttpRequest.m */; };
 		B06EA39A1DE156CF00C132CE /* LoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = B06EA3831DE156CF00C132CE /* LoadingView.m */; };
-		B06EA39B1DE156CF00C132CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B06EA3861DE156CF00C132CE /* Assets.xcassets */; };
-		B06EA39C1DE156CF00C132CE /* video1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B06EA3871DE156CF00C132CE /* video1.mp4 */; };
-		B06EA39D1DE156CF00C132CE /* video2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B06EA3881DE156CF00C132CE /* video2.mp4 */; };
 		B06EA39E1DE156CF00C132CE /* CycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = B06EA38C1DE156CF00C132CE /* CycleScrollView.m */; };
 		B06EA39F1DE156CF00C132CE /* KDCycleBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = B06EA38E1DE156CF00C132CE /* KDCycleBannerView.m */; };
 		B06EA3A01DE156CF00C132CE /* NSTimer+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = B06EA3901DE156CF00C132CE /* NSTimer+Addition.m */; };
@@ -77,9 +74,6 @@
 		B06EA3821DE156CF00C132CE /* LoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingView.h; sourceTree = "<group>"; };
 		B06EA3831DE156CF00C132CE /* LoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingView.m; sourceTree = "<group>"; };
 		B06EA3841DE156CF00C132CE /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
-		B06EA3861DE156CF00C132CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B06EA3871DE156CF00C132CE /* video1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video1.mp4; sourceTree = "<group>"; };
-		B06EA3881DE156CF00C132CE /* video2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video2.mp4; sourceTree = "<group>"; };
 		B06EA38B1DE156CF00C132CE /* CycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CycleScrollView.h; sourceTree = "<group>"; };
 		B06EA38C1DE156CF00C132CE /* CycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CycleScrollView.m; sourceTree = "<group>"; };
 		B06EA38D1DE156CF00C132CE /* KDCycleBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KDCycleBannerView.h; sourceTree = "<group>"; };
@@ -211,7 +205,6 @@
 			isa = PBXGroup;
 			children = (
 				B06EA37C1DE156CF00C132CE /* Common */,
-				B06EA3851DE156CF00C132CE /* Images */,
 				B06EA3891DE156CF00C132CE /* OpenSource */,
 				B06EA3911DE156CF00C132CE /* SmartReadController */,
 				B06EA3941DE156CF00C132CE /* ViewControllers */,
@@ -232,16 +225,6 @@
 				B06EA3841DE156CF00C132CE /* Message.h */,
 			);
 			path = Common;
-			sourceTree = "<group>";
-		};
-		B06EA3851DE156CF00C132CE /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				B06EA3861DE156CF00C132CE /* Assets.xcassets */,
-				B06EA3871DE156CF00C132CE /* video1.mp4 */,
-				B06EA3881DE156CF00C132CE /* video2.mp4 */,
-			);
-			path = Images;
 			sourceTree = "<group>";
 		};
 		B06EA3891DE156CF00C132CE /* OpenSource */ = {
@@ -413,9 +396,6 @@
 			files = (
 				B067DF5C1DE1486C0059CB6A /* LaunchScreen.storyboard in Resources */,
 				B067DF591DE1486C0059CB6A /* Assets.xcassets in Resources */,
-				B06EA39D1DE156CF00C132CE /* video2.mp4 in Resources */,
-				B06EA39B1DE156CF00C132CE /* Assets.xcassets in Resources */,
-				B06EA39C1DE156CF00C132CE /* video1.mp4 in Resources */,
 				B06EA3A31DE156CF00C132CE /* HomeViewController.xib in Resources */,
 				B067DF571DE1486C0059CB6A /* Main.storyboard in Resources */,
 			);
