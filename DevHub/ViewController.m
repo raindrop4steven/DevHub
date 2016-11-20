@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "HomeViewController.h"
 #import "DEVTargetViewController.h"
+#import "OCRViewController.h"
 #import "DEVButton.h"
 
 @interface ViewController ()
@@ -79,7 +80,7 @@
 }
 
 - (IBAction)ocrButtonPressed:(id)sender {
-    HomeViewController *homeViewController = [[HomeViewController alloc] init];
+    OCRViewController *homeViewController = [[OCRViewController alloc] init];
     [self.navigationItem setBackBarButtonItem:[[UIBarButtonItem alloc] initWithTitle:@"开发集市" style:UIBarButtonItemStylePlain target:nil action:nil]];
     [self.navigationController pushViewController:homeViewController animated:YES];
 }

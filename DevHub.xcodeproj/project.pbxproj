@@ -29,6 +29,8 @@
 		B06EA3A81DE15F2D00C132CE /* DEVButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B06EA3A71DE15F2D00C132CE /* DEVButton.m */; };
 		B07C06101DE1844800D2E974 /* Demo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B07C060F1DE1844800D2E974 /* Demo.mp4 */; };
 		B0D2BE1D1DE185DF00CD8F24 /* DEVTargetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D2BE1C1DE185DF00CD8F24 /* DEVTargetViewController.m */; };
+		B0D2BE221DE1879300CD8F24 /* OCRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D2BE201DE1879300CD8F24 /* OCRViewController.m */; };
+		B0D2BE231DE1879300CD8F24 /* OCRViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0D2BE211DE1879300CD8F24 /* OCRViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +94,9 @@
 		B07C060F1DE1844800D2E974 /* Demo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Demo.mp4; sourceTree = "<group>"; };
 		B0D2BE1B1DE185DF00CD8F24 /* DEVTargetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEVTargetViewController.h; sourceTree = "<group>"; };
 		B0D2BE1C1DE185DF00CD8F24 /* DEVTargetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEVTargetViewController.m; sourceTree = "<group>"; };
+		B0D2BE1F1DE1879300CD8F24 /* OCRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCRViewController.h; sourceTree = "<group>"; };
+		B0D2BE201DE1879300CD8F24 /* OCRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCRViewController.m; sourceTree = "<group>"; };
+		B0D2BE211DE1879300CD8F24 /* OCRViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OCRViewController.xib; sourceTree = "<group>"; };
 		F2321958AC2878500C0DCD49 /* Pods-DevHub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevHub.release.xcconfig"; path = "Pods/Target Support Files/Pods-DevHub/Pods-DevHub.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -214,6 +219,7 @@
 				B06EA37C1DE156CF00C132CE /* Common */,
 				B06EA3891DE156CF00C132CE /* OpenSource */,
 				B06EA3911DE156CF00C132CE /* SmartReadController */,
+				B0D2BE1E1DE1879300CD8F24 /* OCRViewController */,
 				B06EA3941DE156CF00C132CE /* ViewControllers */,
 			);
 			path = SmartRead;
@@ -307,6 +313,16 @@
 			);
 			name = Target;
 			path = Views/Target;
+			sourceTree = "<group>";
+		};
+		B0D2BE1E1DE1879300CD8F24 /* OCRViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B0D2BE1F1DE1879300CD8F24 /* OCRViewController.h */,
+				B0D2BE201DE1879300CD8F24 /* OCRViewController.m */,
+				B0D2BE211DE1879300CD8F24 /* OCRViewController.xib */,
+			);
+			path = OCRViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -420,6 +436,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B067DF5C1DE1486C0059CB6A /* LaunchScreen.storyboard in Resources */,
+				B0D2BE231DE1879300CD8F24 /* OCRViewController.xib in Resources */,
 				B07C06101DE1844800D2E974 /* Demo.mp4 in Resources */,
 				B067DF591DE1486C0059CB6A /* Assets.xcassets in Resources */,
 				B06EA3A31DE156CF00C132CE /* HomeViewController.xib in Resources */,
@@ -499,6 +516,7 @@
 				B06EA3981DE156CF00C132CE /* Common.m in Sources */,
 				B0D2BE1D1DE185DF00CD8F24 /* DEVTargetViewController.m in Sources */,
 				B06EA39E1DE156CF00C132CE /* CycleScrollView.m in Sources */,
+				B0D2BE221DE1879300CD8F24 /* OCRViewController.m in Sources */,
 				B06EA39A1DE156CF00C132CE /* LoadingView.m in Sources */,
 				B06EA3A11DE156CF00C132CE /* SXSmartReadViewController.m in Sources */,
 				B06EA3A01DE156CF00C132CE /* NSTimer+Addition.m in Sources */,
