@@ -73,6 +73,7 @@
 
 - (IBAction)imageCompareButtonPressed:(id)sender {
     HomeViewController *homeViewController = [[HomeViewController alloc] init];
+    [self.navigationItem setBackBarButtonItem:[[UIBarButtonItem alloc] initWithTitle:@"开发集市" style:UIBarButtonItemStylePlain target:nil action:nil]];
     [self.navigationController pushViewController:homeViewController animated:YES];
 }
 
