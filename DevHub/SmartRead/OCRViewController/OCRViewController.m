@@ -275,10 +275,10 @@
     [close_button setHidden:YES];
     [take_photo_button setEnabled:YES];
     
-    [corner1 setHidden:NO];
-    [corner2 setHidden:NO];
-    [corner3 setHidden:NO];
-    [corner4 setHidden:NO];
+    [corner1 setHidden:YES];
+    [corner2 setHidden:YES];
+    [corner3 setHidden:YES];
+    [corner4 setHidden:YES];
     
     // Hide right navigationItem
     [self.navigationItem setRightBarButtonItem:nil animated:YES];
