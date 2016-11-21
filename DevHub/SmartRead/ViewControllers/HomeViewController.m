@@ -9,6 +9,7 @@
 #import "HomeViewController.h"
 #import "SXWXNewsViewController.h"
 #import "UIImageView+WebCache.h"
+#import "UIImage+Orientation.h"
 
 @interface HomeViewController ()
 
@@ -135,7 +136,8 @@
     
     CGImageRef imageRef = CGImageCreateWithImageInRect([image CGImage], CGRectMake(x, 10, (image.size.width - 20) * 3.0 / 4.0, image.size.width - 20));
     
-    return [UIImage imageWithCGImage:imageRef scale:1.0 orientation:UIImageOrientationRight];
+    UIImage *tmpImage = [UIImage imageWithCGImage:imageRef scale:1.0 orientation:image.imageOrientation];
+    return [UIImage fixOrientation:tmpImage];
 }
 
 -(void)uploadImageFile:(UIImage *)image

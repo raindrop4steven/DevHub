@@ -28,6 +28,7 @@
 		B06EA3A31DE156CF00C132CE /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B06EA3971DE156CF00C132CE /* HomeViewController.xib */; };
 		B06EA3A81DE15F2D00C132CE /* DEVButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B06EA3A71DE15F2D00C132CE /* DEVButton.m */; };
 		B07C06101DE1844800D2E974 /* Demo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B07C060F1DE1844800D2E974 /* Demo.mp4 */; };
+		B0AADFA31DE2A9060087EBDD /* UIImage+Orientation.m in Sources */ = {isa = PBXBuildFile; fileRef = B0AADFA21DE2A9060087EBDD /* UIImage+Orientation.m */; };
 		B0D2BE1D1DE185DF00CD8F24 /* DEVTargetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D2BE1C1DE185DF00CD8F24 /* DEVTargetViewController.m */; };
 		B0D2BE221DE1879300CD8F24 /* OCRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0D2BE201DE1879300CD8F24 /* OCRViewController.m */; };
 		B0D2BE231DE1879300CD8F24 /* OCRViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0D2BE211DE1879300CD8F24 /* OCRViewController.xib */; };
@@ -95,6 +96,8 @@
 		B06EA3A61DE15F2D00C132CE /* DEVButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEVButton.h; sourceTree = "<group>"; };
 		B06EA3A71DE15F2D00C132CE /* DEVButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEVButton.m; sourceTree = "<group>"; };
 		B07C060F1DE1844800D2E974 /* Demo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Demo.mp4; sourceTree = "<group>"; };
+		B0AADFA11DE2A9060087EBDD /* UIImage+Orientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Orientation.h"; sourceTree = "<group>"; };
+		B0AADFA21DE2A9060087EBDD /* UIImage+Orientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Orientation.m"; sourceTree = "<group>"; };
 		B0D2BE1B1DE185DF00CD8F24 /* DEVTargetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEVTargetViewController.h; sourceTree = "<group>"; };
 		B0D2BE1C1DE185DF00CD8F24 /* DEVTargetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEVTargetViewController.m; sourceTree = "<group>"; };
 		B0D2BE1F1DE1879300CD8F24 /* OCRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCRViewController.h; sourceTree = "<group>"; };
@@ -186,6 +189,7 @@
 				B067DF581DE1486C0059CB6A /* Assets.xcassets */,
 				B067DF5A1DE1486C0059CB6A /* LaunchScreen.storyboard */,
 				B067DF5D1DE1486C0059CB6A /* Info.plist */,
+				B0AADFA01DE2A9060087EBDD /* Category */,
 				B07C06061DE17EDA00D2E974 /* Media */,
 				B0D2BE1A1DE185DF00CD8F24 /* Target */,
 				B06EA3A41DE15EDA00C132CE /* Views */,
@@ -312,6 +316,15 @@
 				B07C060F1DE1844800D2E974 /* Demo.mp4 */,
 			);
 			path = Media;
+			sourceTree = "<group>";
+		};
+		B0AADFA01DE2A9060087EBDD /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				B0AADFA11DE2A9060087EBDD /* UIImage+Orientation.h */,
+				B0AADFA21DE2A9060087EBDD /* UIImage+Orientation.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		B0D2BE1A1DE185DF00CD8F24 /* Target */ = {
@@ -539,6 +552,7 @@
 				B0D2BE1D1DE185DF00CD8F24 /* DEVTargetViewController.m in Sources */,
 				B06EA39E1DE156CF00C132CE /* CycleScrollView.m in Sources */,
 				B0D2BE271DE18BDB00CD8F24 /* SXWXNewsViewController.m in Sources */,
+				B0AADFA31DE2A9060087EBDD /* UIImage+Orientation.m in Sources */,
 				B0D2BE221DE1879300CD8F24 /* OCRViewController.m in Sources */,
 				B06EA39A1DE156CF00C132CE /* LoadingView.m in Sources */,
 				B06EA3A11DE156CF00C132CE /* SXSmartReadViewController.m in Sources */,

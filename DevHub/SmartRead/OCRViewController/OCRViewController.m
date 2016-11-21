@@ -9,6 +9,7 @@
 #import "OCRViewController.h"
 #import "OCRTextViewController.h"
 #import "UIImageView+WebCache.h"
+#import "UIImage+Orientation.h"
 
 @interface OCRViewController ()
 
@@ -141,7 +142,9 @@
     
     CGImageRef imageRef = CGImageCreateWithImageInRect([image CGImage], CGRectMake(x, 10, OCR_WINDOW_HEIGHT, image.size.width - 20));
     
-    return [UIImage imageWithCGImage:imageRef scale:1.0 orientation:UIImageOrientationRight];
+    UIImage *tmpImage = [UIImage imageWithCGImage:imageRef scale:1.0 orientation:image.imageOrientation];
+    
+    return [UIImage fixOrientation:tmpImage];
 }
 
 -(void)uploadImageFile:(UIImage *)image
